@@ -1,3 +1,9 @@
+<%
+if(session.getAttribute("name")==null){
+	response.sendRedirect("login.jsp");
+}
+
+%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +34,7 @@
 		class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
 		id="mainNav">
 		<div class="container">
-			<a class="navbar-brand" href="#page-top">Unique Developer</a>
+			<a class="navbar-brand" href="#page-top">Mak Developer</a>
 			<button
 				class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
 				type="button" data-bs-toggle="collapse"
@@ -41,9 +47,9 @@
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="">Logout</a></li>
 					
@@ -58,7 +64,7 @@
 			<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg"
 				alt="..." />
 			<!-- Masthead Heading-->
-			<h1 class="masthead-heading text-uppercase mb-0">Welcome To Unique Developer</h1>
+			<h1 class="masthead-heading text-uppercase mb-0">Bem-vindo a pagina CoffeWithCode</h1>
 			<!-- Icon Divider-->
 			<div class="divider-custom divider-light">
 				<div class="divider-custom-line"></div>
@@ -223,8 +229,7 @@
 		<div class="container">
 			<!-- Contact Section Heading-->
 			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact
-				Me</h2>
+				class="page-section-heading text-center text-uppercase text-secondary mb-0">Entra em contato</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -301,7 +306,7 @@
 						</div>
 						<!-- Submit Button-->
 						<button class="btn btn-primary btn-xl disabled" id="submitButton"
-							type="submit">Send</button>
+							type="submit">Enviar</button>
 					</form>
 				</div>
 			</div>
