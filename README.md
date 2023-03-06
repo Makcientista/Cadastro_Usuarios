@@ -11,6 +11,8 @@ It is a user registration system with procedures that allow users to register on
 - JSP
 - HTML
 - CSS
+- JavaScript
+
 
 # Server 
 - apache-tomcat-9.0.72
